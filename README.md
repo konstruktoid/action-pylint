@@ -31,12 +31,12 @@ jobs:
 
 ```
 workflow "Python Linting" {
-  on # "push"
-  resolves # ["python-linting"]
+  on = "push"
+  resolves = ["python-linting"]
 }
 
 action "python-linting" {
-  uses # "konstruktoid/action-pylint@master"
+  uses = "konstruktoid/action-pylint@master"
 }
 ```
 
