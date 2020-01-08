@@ -1,9 +1,9 @@
-= Python linting and testing using black and flake8
+# Python linting and testing using black and flake8
 
 A GitHub action that checks Python code using [black](https://github.com/psf/black)
 and [flake8](https://gitlab.com/pycqa/flake8).
 
-== Tools installed
+## Tools installed
 
 ```
 black
@@ -14,7 +14,7 @@ flake8-deprecated
 flake8-executable
 ```
 
-== Github Actions configuration examples
+## Github Actions configuration examples
 
 ```sh
 on: [push, pull_request]
@@ -31,16 +31,16 @@ jobs:
 
 ```
 workflow "Python Linting" {
-  on = "push"
-  resolves = ["python-linting"]
+  on # "push"
+  resolves # ["python-linting"]
 }
 
 action "python-linting" {
-  uses = "konstruktoid/action-pylint@master"
+  uses # "konstruktoid/action-pylint@master"
 }
 ```
 
-== Script
+## Script
 
 ```sh
 #!/bin/sh -l
