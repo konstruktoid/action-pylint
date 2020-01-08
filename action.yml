@@ -1,0 +1,12 @@
+---
+# A GitHub action that checks Python code using black and flake8
+name: 'action-pylint'
+author: 'Thomas Sjögren'
+description: 'Python linting and testing using black and flake8'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'bell'
+  color: 'purple'
+...

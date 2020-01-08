@@ -2,7 +2,7 @@ FROM konstruktoid/alpine
 
 LABEL "com.github.actions.name"="Konstruktoid Python linting"
 LABEL "com.github.actions.description"="Python linting using black and flake8"
-LABEL "com.github.actions.icon"="mic"
+LABEL "com.github.actions.icon"="bell"
 LABEL "com.github.actions.color"="purple"
 
 LABEL "repository"="https://github.com/konstruktoid/action-pylint"
