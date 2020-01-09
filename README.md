@@ -5,12 +5,12 @@ and [flake8](https://gitlab.com/pycqa/flake8) with some addtitional plugins.
 
 ## Tools and plugins installed
 
-[black](https://github.com/psf/black)
-[flake8](https://gitlab.com/pycqa/flake8)
-[flake8-bandit](https://pypi.org/project/flake8-bandit/)
-[flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
-[flake8-deprecated](https://pypi.org/project/flake8-deprecated/)
-[flake8-executable](https://pypi.org/project/flake8-executable/)
+[black](https://github.com/psf/black) - code formatter\
+[flake8](https://gitlab.com/pycqa/flake8) - glues together Python tools and plugins\
+[flake8-bandit](https://pypi.org/project/flake8-bandit/) - security testing\
+[flake8-bugbear](https://pypi.org/project/flake8-bugbear/) - bug finder\
+[flake8-deprecated](https://pypi.org/project/flake8-deprecated/) - warns about deprecated method calls\
+[flake8-executable](https://pypi.org/project/flake8-executable/) - checks executable permissions and shebangs
 
 ## Github Actions configuration examples
 
