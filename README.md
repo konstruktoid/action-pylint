@@ -1,18 +1,16 @@
 # Python linting and testing using black and flake8
 
 A GitHub action that checks Python code using [black](https://github.com/psf/black)
-and [flake8](https://gitlab.com/pycqa/flake8).
+and [flake8](https://gitlab.com/pycqa/flake8) with some addtitional plugins.
 
-## Tools installed
+## Tools and plugins installed
 
-```
-black
-flake8
-flake8-bandit
-flake8-bugbear
-flake8-deprecated
-flake8-executable
-```
+[black](https://github.com/psf/black)
+[flake8](https://gitlab.com/pycqa/flake8)
+[flake8-bandit](https://pypi.org/project/flake8-bandit/)
+[flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
+[flake8-deprecated](https://pypi.org/project/flake8-deprecated/)
+[flake8-executable](https://pypi.org/project/flake8-executable/)
 
 ## Github Actions configuration examples
 
