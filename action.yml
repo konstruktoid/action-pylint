@@ -2,7 +2,7 @@
 # A GitHub action that checks Python code using black and flake8
 name: 'Python quality and format checker'
 author: 'Thomas Sjögren'
-description: 'Python linting and format checking using black and flake8'
+description: 'Python linting and format checking using black, safety and flake8'
 runs:
   using: 'docker'
   image: 'Dockerfile'
