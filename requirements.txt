@@ -4,3 +4,4 @@ flake8-bandit
 flake8-bugbear
 flake8-deprecated
 flake8-executable
+safety
