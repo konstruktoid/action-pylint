@@ -2,7 +2,7 @@
 
 A GitHub action that checks Python code using [black](https://github.com/psf/black),
 [safety](https://pypi.org/project/safety/) and [flake8](https://gitlab.com/pycqa/flake8)
-with some addtitional plugins.
+with some additional plugins.
 
 ## Tools and plugins installed
 
