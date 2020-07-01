@@ -1,4 +1,4 @@
-FROM konstruktoid/alpine
+FROM konstruktoid/alpine:latest
 
 LABEL "com.github.actions.name"="Konstruktoid Python linting"
 LABEL "com.github.actions.description"="Python linting using black, safety and flake8"
@@ -11,9 +11,7 @@ LABEL "maintainer"="Thomas Sjögren <konstruktoid@users.noreply.github.com>"
 
 COPY requirements.txt /requirements.txt
 
-RUN apk update && \
-    apk upgrade && \
-    apk --update add gcc musl-dev python3-dev python3 && \
+RUN apk --no-cache add gcc musl-dev python3-dev python3 && \
     pip3 install --upgrade pip && \
     pip3 install -r /requirements.txt && \
     apk del gcc musl-dev python3-dev && \

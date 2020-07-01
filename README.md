@@ -1,12 +1,13 @@
 # Python linting and testing using black and flake8
 
 A GitHub action that checks Python code using [black](https://github.com/psf/black),
-[safety](https://pypi.org/project/safety/) and [flake8](https://gitlab.com/pycqa/flake8)
-with some additional plugins.
+[dlint](https://github.com/dlint-py/dlint), [safety](https://pypi.org/project/safety/)
+and [flake8](https://gitlab.com/pycqa/flake8) with some additional plugins.
 
 ## Tools and plugins installed
 
 [black](https://github.com/psf/black) - code formatter\
+[dlint](https://github.com/dlint-py/dlint) - static code analysis\
 [flake8](https://gitlab.com/pycqa/flake8) - glues together Python tools and plugins\
 [flake8-bandit](https://pypi.org/project/flake8-bandit/) - security testing\
 [flake8-bugbear](https://pypi.org/project/flake8-bugbear/) - bug finder\

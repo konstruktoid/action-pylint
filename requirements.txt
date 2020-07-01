@@ -1,4 +1,5 @@
 black
+dlint
 flake8
 flake8-bandit
 flake8-bugbear
