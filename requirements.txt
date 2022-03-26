@@ -1,4 +1,4 @@
-bandit==1.7.2
+bandit==1.7.4
 black
 dlint
 flake8
