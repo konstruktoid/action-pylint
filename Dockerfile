@@ -13,7 +13,7 @@ COPY requirements.txt /requirements.txt
 
 RUN apk --no-cache add gcc musl-dev py3-pip python3 python3-dev && \
     pip3 install --upgrade pip && \
-    pip3 install -r /requirements.txt && \
+    pip3 install --upgrade --ignore-installed -r /requirements.txt && \
     apk del gcc musl-dev python3-dev && \
     rm -rf /var/cache/apk/
 
