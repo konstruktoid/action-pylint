@@ -18,9 +18,13 @@ with some additional plugins.
 
 ## Github Actions configuration examples
 
-```sh
+```yaml
 on: [push, pull_request]
 name: Python Linting
+
+permissions:
+  contents: read
+
 jobs:
   PythonLinting:
     name: Python linting
@@ -29,17 +33,6 @@ jobs:
       - uses: actions/checkout@master
       - name: Konstruktoid Python linting
         uses: konstruktoid/action-pylint@master
-```
-
-```
-workflow "Python Linting" {
-  on = "push"
-  resolves = ["python-linting"]
-}
-
-action "python-linting" {
-  uses = "konstruktoid/action-pylint@master"
-}
 ```
 
 ## Script
