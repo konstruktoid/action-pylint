@@ -1,4 +1,4 @@
-bandit==1.7.4
+bandit==1.7.5
 black
 dlint==0.14.0
 flake8==6.0.0
