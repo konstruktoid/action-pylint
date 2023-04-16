@@ -1,4 +1,4 @@
-# Python linting and testing using black and flake8
+# Python linting and testing using black and ruff
 
 A GitHub action that checks Python code using
 [black](https://github.com/psf/black) and
@@ -18,7 +18,9 @@ jobs:
     name: Python linting
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout repository
+        uses: actions/checkout@master
+
       - name: Konstruktoid Python linting
         uses: konstruktoid/action-pylint@master
 ```
