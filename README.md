@@ -19,10 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@master
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
 
-      - name: Konstruktoid Python linting
-        uses: konstruktoid/action-pylint@master
+      - name: Python linting
+        uses: konstruktoid/action-pylint@v0.2.2
 ```
 
 ## Script
