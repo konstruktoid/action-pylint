@@ -11,11 +11,12 @@ LABEL "maintainer"="Thomas Sjögren <konstruktoid@users.noreply.github.com>"
 
 COPY requirements.txt /requirements.txt
 
-RUN apk --no-cache add gcc musl-dev python3 python3-dev && \
+ENV PATH="${PATH}:/root/.local/bin"
+
+RUN apk --no-cache add gcc musl-dev python3 python3-dev py3-pip && \
     if [ ! -e /usr/bin/python ]; then ln -sf python3 /usr/bin/python ; fi && \
-    python3 -m ensurepip --upgrade && \
-    python3 -m pip install --no-cache-dir --upgrade pip && \
-    python3 -m pip install --no-cache-dir --upgrade --ignore-installed --requirement /requirements.txt && \
+    python3 -m pip install --break-system-packages --no-cache-dir --upgrade pipx && \
+    for p in $(grep -v '^#' /requirements.txt); do pipx install "${p}"; done && \
     apk del gcc musl-dev python3-dev && \
     rm -rf /var/cache/apk/
 
