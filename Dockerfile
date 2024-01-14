@@ -1,7 +1,7 @@
 FROM konstruktoid/alpine:latest@sha256:52517b02f6e45192667e4cf8cd7dd1831b9d1ae8f04d5171e5da8cfb3d088c43
 
 LABEL "com.github.actions.name"="Konstruktoid Python linting"
-LABEL "com.github.actions.description"="Python linting using black, safety and flake8"
+LABEL "com.github.actions.description"="Python linting using black and ruff"
 LABEL "com.github.actions.icon"="bell"
 LABEL "com.github.actions.color"="purple"
 

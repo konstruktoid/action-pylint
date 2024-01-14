@@ -1,8 +1,8 @@
 ---
-# A GitHub action that checks Python code using black and flake8
+# A GitHub action that checks Python code using black and ruff
 name: 'Python quality and format checker'
 author: 'Thomas Sjögren'
-description: 'Python linting and format checking using black, safety and flake8'
+description: 'Python linting and format checking using black ruff'
 runs:
   using: 'docker'
   image: 'Dockerfile'
