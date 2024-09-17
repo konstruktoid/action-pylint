@@ -1,4 +1,4 @@
-FROM konstruktoid/alpine:latest@sha256:faf7bd732532eeda4385452cfa0ec289cef038d16885c52d33b44e2f413e2df9
+FROM konstruktoid/alpine:latest@sha256:362d8cc619f9c21eb034b31fece4316a4e6d722bca20254e42ae08eddba1db24
 
 LABEL "com.github.actions.name"="Konstruktoid Python linting"
 LABEL "com.github.actions.description"="Python linting using black and ruff"
