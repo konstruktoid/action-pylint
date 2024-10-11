@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Python linting
-        uses: konstruktoid/action-pylint@v0.8.0
+        uses: konstruktoid/action-pylint@v1.0.0
 ```
 
 ## Script
