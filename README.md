@@ -8,7 +8,7 @@ A GitHub action that checks Python code using
 
 ```yaml
 on: [push, pull_request]
-name: Python Linting
+name: Python linting
 
 permissions:
   contents: read
@@ -19,10 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+        uses: actions/checkout@v4
 
       - name: Python linting
-        uses: konstruktoid/action-pylint@v0.2.2
+        uses: konstruktoid/action-pylint@v0.8.0
 ```
 
 ## Script
@@ -32,6 +32,8 @@ jobs:
 
 set -euf
 
+export PATH="${PATH}:/root/.local/bin"
+
 black --check --diff --no-color --quiet .
-ruff check --select ALL --ignore ANN --ignore D --ignore INP --ignore PTH --ignore T20 .
+ruff check --select ALL .
 ```
