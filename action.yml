@@ -1,8 +1,8 @@
 ---
-# A GitHub action that checks Python code using black and ruff
+# A GitHub action that checks Python code using black, ruff and ty
 name: 'Python quality and format checker'
 author: 'Thomas Sjögren'
-description: 'Python linting and format checking using black and ruff'
+description: 'Python linting and format checking using black, ruff and ty'
 runs:
   using: 'docker'
   image: 'Dockerfile'
