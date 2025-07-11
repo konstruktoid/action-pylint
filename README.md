@@ -1,8 +1,9 @@
-# Python linting and testing using black and ruff
+# Python linting and testing using black, ruff and ty
 
 A GitHub action that checks Python code using
-[black](https://github.com/psf/black) and
-[ruff](https://github.com/charliermarsh/ruff).
+[black](https://github.com/psf/black),
+[ruff](https://github.com/astral-sh/ruff) and
+[ty](https://github.com/astral-sh/ty).
 
 ## Github Actions configuration examples
 
@@ -22,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Python linting
-        uses: konstruktoid/action-pylint@v1.0.0
+        uses: konstruktoid/action-pylint@v2
 ```
 
 ## Script
@@ -36,4 +37,5 @@ export PATH="${PATH}:/root/.local/bin"
 
 black --check --diff --no-color --quiet .
 ruff check --select ALL .
+ty check .
 ```
