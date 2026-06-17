@@ -4,7 +4,7 @@ A GitHub action that checks Python code using
 [ruff](https://github.com/astral-sh/ruff) and
 [ty](https://github.com/astral-sh/ty).
 
-## Github Actions configuration example
+## GitHub Actions configuration example
 
 ```yaml
 on:
