@@ -1,4 +1,4 @@
-# Python linting and testing using black, ruff and ty
+# Python linting and testing using ruff and ty
 
 A GitHub action that checks Python code using
 [ruff](https://github.com/astral-sh/ruff) and
