@@ -12,20 +12,15 @@ COPY requirements.txt /requirements.txt
 RUN apk --no-cache add python3 && \
     rm -rf /var/cache/apk/
 
-RUN adduser -D -u 1000 linter
-
 COPY --from=uv /usr/local/bin/uv /usr/local/bin/uvx /usr/local/bin/
 
-USER linter
+ENV PATH="/root/.local/bin:${PATH}" \
+    UV_CACHE_DIR="/root/.cache/uv"
 
-ENV PATH="/home/linter/.local/bin:${PATH}" \
-    UV_CACHE_DIR="/home/linter/.cache/uv"
-
-RUN mkdir -p "${HOME}/.local/bin" "${UV_CACHE_DIR}" && \
-    while IFS= read -r pkg; do \
-      case "$pkg" in ''|'#'*) continue ;; esac; \
+RUN mkdir -p "/root/.local/bin" "${UV_CACHE_DIR}" && \
+    for pkg in $(grep -vE '^$|#' /requirements.txt); do \
       uv tool install "$pkg"; \
-    done < /requirements.txt && \
+    done && \
     rm -rf "${UV_CACHE_DIR}"
 
 WORKDIR /github/workspace
