@@ -28,7 +28,7 @@ RUN mkdir -p "${HOME}/.local/bin" "${UV_CACHE_DIR}" && \
     done < /requirements.txt && \
     rm -rf "${UV_CACHE_DIR}"
 
-WORKDIR /github_workspace
+WORKDIR /github/workspace
 
 COPY entrypoint.sh /entrypoint.sh
 
