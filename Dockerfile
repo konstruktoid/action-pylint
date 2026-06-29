@@ -1,5 +1,5 @@
 FROM ghcr.io/astral-sh/uv:0.11.25-python3.13-trixie@sha256:952c3ad2c57bc823c8d7e989089a498f7c6c3ab6419397788181d40ba4cd7871 AS uv
-FROM konstruktoid/alpine:latest@sha256:731ddd017ad870339bca068e3eb8269e8a60bbdebca598c9ffc8de944844b77d
+FROM konstruktoid/alpine:latest@sha256:fa5fbc02876cd31b7dfbab885290732743c5c44fcad5d4f271381ba6e7fc0c9a
 
 LABEL org.opencontainers.image.title="action-pylint"
 LABEL org.opencontainers.image.description="Python linting using ruff and ty"
