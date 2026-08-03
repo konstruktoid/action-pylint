@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:0.12.0-python3.13-trixie@sha256:3531a47a8e3f2365fdbd90632299ca8fbe8693ec34d867862c80cdc520ee6875 AS uv
+FROM ghcr.io/astral-sh/uv:0.12.1-python3.13-trixie@sha256:d395738c3aad16a50f32c3f2a5fc56bd622b2d34a1ed6c0926a41faf21ea4be6 AS uv
 FROM konstruktoid/alpine:latest@sha256:731ddd017ad870339bca068e3eb8269e8a60bbdebca598c9ffc8de944844b77d
 
 LABEL org.opencontainers.image.title="action-pylint"
